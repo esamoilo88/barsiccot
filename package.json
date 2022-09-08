@@ -1,0 +1,50 @@
+{
+    "private": true,
+    "scripts": {
+        "cleanup": "rimraf public/js/chunks",
+        "dev": "php create_translations_json.php && npm run cleanup && mix",
+        "watch": "php create_translations_json.php && npm run cleanup && mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "php create_translations_json.php && mix --production"
+    },
+    "devDependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "axios": "^0.21.1",
+        "cross-env": "^7.0",
+        "deepmerge": "^4.2.2",
+        "laravel-mix": "^6.0.11",
+        "lodash": "^4.17.19",
+        "node-sass": "^5.0.0",
+        "postcss": "8.1",
+        "resolve-url-loader": "^3.1.2",
+        "rimraf": "^3.0.2",
+        "sass": "^1.27.0",
+        "sass-loader": "^11.0.1",
+        "vue-loader": "^15.9.6",
+        "vue-style-loader": "^4.1.2",
+        "vue-template-compiler": "^2.6.12",
+        "webpack": "^5.74.0"
+    },
+    "dependencies": {
+        "@trevoreyre/autocomplete-vue": "^2.2.0",
+        "bootstrap": "^4.5.3",
+        "bootstrap-vue": "^2.21.2",
+        "chart.js": "^3.6.0",
+        "dayjs": "^1.9.6",
+        "jquery": "^3.5.1",
+        "placeholder-loading": "^0.2.6",
+        "popper.js": "^1.16.1",
+        "select2": "^4.0.13",
+        "sortablejs": "^1.14.0",
+        "text-clipper": "^2.1.0",
+        "v-select2-component": "^0.4.3",
+        "vue": "^2.6.12",
+        "vue-click-outside": "^1.1.0",
+        "vue-debounce": "^2.5.8",
+        "vue-select": "^3.18.3",
+        "vue-the-mask": "^0.11.1",
+        "vuelidate": "^0.7.6",
+        "vuex": "^3.6.2"
+    }
+}
